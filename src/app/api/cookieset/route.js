@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 
-export async function POST(req, res) {
+export async function GET(req, res) {
   return NextResponse.json(
+    { message: "succes" },
     {
-      status: 200,
-      Headers: {
+      headers: {
         "Set-Cookie": "theme= Dark; path= /",
       },
     }
